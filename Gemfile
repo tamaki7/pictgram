@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt'
 # Use ActiveStorage variant
 gem "carrierwave"
+gem 'rmagick'
 # gem 'mini_magick', '~> 4.8'
 gem "jquery-rails"
 # Use Capistrano for deployment
