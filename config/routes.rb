@@ -6,13 +6,15 @@ Rails.application.routes.draw do
   get "pages/help"
 
   resources :users
-  resources :topics
+  resources :topics do
+   resources :comments
+  end
 
   get 'favorites/index'
   post '/favorites', to: 'favorites#create'
 
-  get 'comments/new'
-  post '/comments', to: 'comments#create'
+  # get 'comments/new'
+  # post '/comments', to: 'comments#create'
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
